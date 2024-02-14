@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="text-center px-3">
+        <h1 id="head" class="text-primary">Car World</h1>
+    </header>
+    <form id="f1">
+
+
+    <div class="row p-1 d-flex justify-content-between">
+ 
+        <div class="col col-4 rounded shadow border border-3 border-dark-light p-4  ">
+            <form id="form1>" action="">
+                <h2 class="text-primary">Enter Details</h2>
+                <label for="brand">Car Brand</label>
+                <input type="text" id="carid" class="form-control mt-4" placeholder="Car Brand">
+                <label for="Price">Price</label>
+                <input type="text" id="priceid" class="form-control mt-5" placeholder="Price">
+                <label for="Key">Key</label>
+                <input type="text" id="keyid" class="form-control mt-5" placeholder="key">
+                <div class="text-center">
+                <button type="button" id="btnid" class="btn text-success fw-bold  border-1 border-success  mt-5" onclick="storeRecords()">Store Records</button>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="col col-3 rounded shadow border border-3 border-dark-light p-4">
+            <form id="form2" action="">
+                <h2 class="text-primary">Enter Key To Retreive Item</h2>
+                <label for="Key">Key</label>
+                <input type="text" id="searchid" class="form-control" placeholder="key">
+                <div class="text-center">
+                <button type="button" class="btn  text-primary fw-bold  border-1 border-primary " onclick="retrieve()">Retrieve Records</button>
+                </div>
+                <div id="result">   </div>
+                
+                </form>
+            </div>
+        
+
+        
+            
+    
+
+        <div class="col-3  rounded shadow border border-3 border-dark-light p-3">
+            <form id="form3" action="">
+                <h2 class="text-primary">Enter Key To Delete Items</h2>
+                <label for="Key">Key</label>
+                <input type="text" id="deleteid" class="form-control" placeholder="key">
+                <div class="text-center">
+                <button type="button" id="dltid" class="btn text-danger fw-bold  border-1 border-danger " onclick="removeall()">Remove Records</button>
+            </div>
+            </form>
+        </div>
+
+
+        <div class="text-center">
+            <button type="button" id="clearid" class="btn text-danger fw-bold  border-1 border-danger " onclick="clearall()">Remove Records</button>
+        </div>
+        
+      
+
+
+    </div>
+    </form>
+</body>
+<script src="./index.js"></script>
+</html>
+
+
